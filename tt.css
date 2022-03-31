@@ -1,0 +1,212 @@
+#section1 {
+  height: 490px;
+  background-color: rgb(94, 190, 235);
+  padding: 10px;
+  margin-bottom: 75px;
+}
+#col7 {
+  margin-top: 130px;
+  color: aliceblue;          
+}
+#img1 {
+  margin-top: 70px;
+height: 220px;
+margin-left: 0px;
+width: 225px;
+background-color: rgb(102, 190, 231);
+border-radius: 50%;
+display: inline-block;
+padding: 55px;
+box-shadow: 5px 5px  50px 0.5px rgb(104, 157, 182);
+position: relative;
+animation-name: example;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+
+#img3 {
+  margin-top: 180px;
+height: 260px;
+margin-left: 40px;
+width: 300px;
+background-color: rgb(102, 190, 231);
+border-radius: 50%;
+display: inline-block;
+padding: 75px;
+position: relative;
+animation-name: example;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+#img2 {
+height: 140px;
+margin-left: 0px;
+width: 180px;
+background-color: rgb(102, 190, 231);
+border-radius: 50%;
+display: inline-block;
+padding: 25px;
+position: relative;
+animation-name: example;
+animation-duration: 7s;
+animation-iteration-count: infinite;
+}
+#btn {
+  margin-top: 50px;
+  font-family: 'Fredoka One', cursive;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: scale(0.97);  
+}
+
+@keyframes example {
+0%   {left:0px; top:0px;}
+50%  {bottom:0px; top:20px;}
+100%  {bottom:20px; top:0px;}
+
+}
+.wrapper{
+  width: 900px;
+  padding: 35px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px #dbe1e2;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 20px;  
+}
+.wrapper1{
+  width: 150px;
+  padding: 25px;
+  background:#fff;
+  box-shadow: 0 10px 15px #b7bdbe;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color:  rgb(125, 216, 252);
+}
+.wrapper2{
+  width: 190px;
+  padding: 0px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 550px;
+  margin-bottom: 60px;
+  
+}
+#qna {
+  display: flex;
+  flex-direction:column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+  .wrapper .input-field{
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
+  }
+.typing-text p{
+  font-size: 21px;
+  text-align: justify;
+  letter-spacing: 3px;
+  color: rgb(42, 190, 248);
+}
+.typing-text p span.correct{
+  color: #1aff00;
+}
+.typing-text p span.incorrect{
+  color: #cb3439;
+  outline: 1px solid #fff;
+  background: #ffc0cb;
+  border-radius: 4px;
+}
+.typing-text p span.active{
+  color: #1355e4;
+}
+.typing-text p span.active::before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  top: 10;
+  left: 0;
+  opacity: 0;
+  animation: blink 1s ease-in-out infinite;
+}
+@keyframes blink{
+  100%{ 
+    opacity: 1; 
+  }
+}
+.content-box .content{
+    margin-top: 17px;
+    justify-content: space-between;
+} 
+.content button{
+  outline: none;
+  border: none;
+  width: 105px;
+  color: #fff;
+  padding: 8px 0;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 20px;
+  background: #0449ca;
+  transition: transform 0.3s ease;
+}
+.content button:active{
+  transform: scale(0.97);
+}
+.content .result-details{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: calc(100% - 180px);
+  justify-content: space-around;
+}
+.result-details li{
+  display: flex;
+  height: 20px;
+  position: relative;
+  align-items: center;
+}
+.result-details li p{
+  font-size: 19px;
+}
+.result-details li span{
+  display: block;
+  font-size: 20px;
+  margin-left: 10px;
+}
+@media (max-width: 745px) {
+  .wrapper{
+    padding: 10px;
+  }
+  .content-box .content{
+    padding: 20px 0;
+  }
+  .content-box .typing-text{
+    max-height: 100%;
+  }
+  .typing-text p{
+    font-size: 19px;
+    text-align: left;
+  }
+  .content .result-details{
+    width: 100%;
+  }
+  .result-details li p, 
+  .result-details li span{
+    font-size: 17px;
+  }
+}

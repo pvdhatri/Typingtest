@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Typing Speed Test Game</title>
+    <link rel="stylesheet" href="tt.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel=
+    "stylesheet" integrity=
+    "sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <div id="section1">
+        <div class="container">
+          <div class="row" style="justify-content: space-around;">
+            <div class="col-5">
+              <div class="d-flex flex-wrap">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3">
+                      <img src="tt1.PNG" class="rounded-circle" alt="..." id="img1">
+                      <img src="tt2.PNG" class="rounded-circle" alt="..." id="img2">
+                    </div>
+                    <div class="col-3">
+                      <img src="tt3.PNG" class="rounded-circle" alt="..." id="img3">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="col-7" id="col7">
+                <h1 style="font-family: 'Fredoka One', cursive; font-size:40px;">Test Your Typing Speed!</h1>
+                <p style="font-size:20px;">Test your speed and accuracy using our free typing test. Use your results to see how 
+                  far a proper typing method could take you!</p>
+                  <a href="#testSection"><button type="button" class="btn btn-primary rounded-pill" onClick="myFunction()" id="btn">Start the test!</button></a>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex" id="testSection">
+        <div class=" col-8 wrapper">
+          <input type="text" class="input-field">
+          <div class="content-box">
+            <div class="container">
+              <div class="row" style="justify-content:space-between;">
+                <div class="col-12">
+                  <div class="typing-text">
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" d-flex container">
+          <div class="row">
+            <div class="col-6" style="width: 170px;">
+              <div class="wrapper1">
+                <div class="content-box">
+                  <div class="container">
+                    <div class="content">
+                      <ul class="result-details">
+                        <li class="time">
+                          <p>Time Left:</p>
+                          <span><b>60</b>s</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6" style="width: 170px;">
+              <div class="wrapper1">
+                <div class="content-box">
+                  <div class="container">
+                    <div class="content">
+                      <ul class="result-details">
+                        <li class="mistake">
+                          <p>Mistakes:</p>
+                          <span>0</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" d-flex container">
+          <div class="row">
+            <div class="col-6" style="width: 170px;">
+              <div class="wrapper1">
+                <div class="content-box">
+                  <div class="container">
+                    <div class="content">
+                      <ul class="result-details">
+                        <li class="wpm">
+                          <p>WPM:</p>
+                          <span>0</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6" style="width: 170px;">
+              <div class="wrapper1">
+                <div class="content-box">
+                  <div class="container">
+                    <div class="content">
+                      <ul class="result-details">
+                        <li class="cpm">
+                          <p>CPM:</p>
+                          <span>0</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper2">
+        <div class="content-box">
+          <div class="container" style="justify-content: center;">
+      <div class="content">
+        <button>Try Again</button>
+      </div>
+    </div>
+  </div>
+      </div>
+
+      <div class="container">
+        <div class="row" style="margin-top: 150px; margin-bottom: 100px;">
+          <div class="col-6">
+            <div class="d-flex" id="qna">
+              <h6 style="color: rgb(44, 119, 218);"><b>What is the average typing speed?</b></h6>
+              <p style="color: rgb(139, 141, 143);">The average typing speed is around 40 words per minute (wpm). 
+                If you want to be very productive, you should aim for a typing speed of 
+                65 to 70 words per minute. It’s easy with the right technique!</p>
+            </div>
+            <hr style="margin-top: 70px;">
+            <div class="d-flex" id="qna" style="margin-top: 40px;">
+              <h6 style="color: rgb(44, 119, 218);"><b>What is the best application for learning to type?</b></h6>
+              <p style="color: rgb(139, 141, 143);">This training program covers every 
+                aspect of proper typing technique, offering a complete and customized program 
+                with hundreds of activities that are suitable for beginners and veterans alike. 
+                Our method has helped millions of users achieve their goals.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="d-flex" id="qna">
+              <h6 style="color: rgb(44, 119, 218);"><b>How do you type faster?</b></h6>
+              <p style="color: rgb(139, 141, 143);">To type faster, you need to learn how to 
+                position yourself correctly, use all your fingers, hit the right keys without 
+                looking and avoid making mistakes. If you haven’t mastered any one of these 
+                things, you will benefit from a typing training program.</p>
+            </div>
+            <hr style="margin-top: 48px;">
+            <div class="d-flex" id="qna" style="margin-top: 40px;">
+              <h6 style="color: rgb(44, 119, 218);"><b>How long will learning to type take?</b></h6>
+              <p style="color: rgb(139, 141, 143);">You will see improvement in a few weeks if 
+                you practice often, concentrate on accuracy over speed and adopt the proper 
+                technique. The hardest part is forgetting your bad habits, even if it means 
+                typing more slowly at first.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function myFunction() {
+          document.getElementById("testSection").style.display = "block";
+        }
+        </script>
+
+    <script src="js/paragraphs.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
